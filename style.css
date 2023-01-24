@@ -222,7 +222,7 @@ header {
 }
 
 /* Media query */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .desktop-nav,
   .get_started,
   .hero-desktop,.hide_menu{
@@ -364,7 +364,7 @@ header {
   }
 }
 
-@media (min-width: 800px) and (max-width: 950px) {
+@media (min-width: 850px) and (max-width: 950px) {
   header {
     padding: 20px 10px;
   }
@@ -410,7 +410,7 @@ header {
   }
 }
 
-@media screen and (min-width: 800px) and (max-width: 1180px) {
+@media screen and (min-width: 850px) and (max-width: 1180px) {
   .main_content {
     padding: 50px 30px 30px;
   }

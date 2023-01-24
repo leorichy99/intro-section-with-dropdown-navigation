@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Intro section with dropdown" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body style="overflow-y: auto;" tabindex="0">
+  <main class="container">
+    <!-- header -->
+    <header class="d-flex-bw">
+      <div class="company_details">
+        <!-- logo -->
+        <div class="logo">
+          <img src="./images/logo.svg" alt="Snap logo" />
+        </div>
+
+        <!-- desktop navigation -->
+        <nav class="desktop-nav">
+          <div class="drop_down link">
+            <div class="drop_down_head">
+              <span class="head-link">Features</span>
+              <img src="./images/icon-arrow-down.svg" alt="down arrow" />
+            </div>
+
+            <div class="drop_down_menu features hide_menu">
+              <div class="drop_down_item">
+                <img src="./images/icon-todo.svg" alt="todo icon" />
+                <a href="index.html" aria-label="Todo list link">Todo List</a>
+              </div>
+
+              <div class="drop_down_item">
+                <img src="./images/icon-calendar.svg" alt="calendar icon" />
+                <a href="index.html" aria-label="Calendar link">Calender</a>
+              </div>
+
+              <div class="drop_down_item">
+                <img src="./images/icon-reminders.svg" alt="reminders icon" />
+                <a href="index.html" aria-label="Reminders link">Reminders</a>
+              </div>
+
+              <div class="drop_down_item">
+                <img src="./images/icon-planning.svg" alt="planning icon" />
+                <a href="index.html" aria-label="Planning link">Planning</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="drop_down link">
+            <div class="drop_down_head">
+              <span class="head-link">Company</span>
+              <img src="./images/icon-arrow-down.svg" alt="up arrow" />
+            </div>
+
+            <div class="drop_down_menu company hide_menu">
+              <a href="index.html" aria-label="Link to company's history">History</a>
+              <a href="index.html" aria-label="Link to company's team">Our Team</a>
+              <a href="index.html" aria-label="Link to company's blog">Blog</a>
+            </div>
+          </div>
+
+          <a href="index.html" class="link" aria-label="Link to careers">Careers</a>
+          <a href="index.html" class="link" aria-label="About company link">About</a>
+        </nav>
+      </div>
+
+      <!-- login & register -->
+      <div class="get_started">
+        <a href="index.html" class="login" aria-label="Login button">Login</a>
+        <a href="index.html" class="register" aria-label="Registration button">Register</a>
+      </div>
+
+      <!-- menu icon -->
+      <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg" class="menu-icon">
+        <g fill="#151515" fill-rule="evenodd">
+          <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
+        </g>
+      </svg>
+    </header>
+
+    <!-- hamburger -->
+    <div class="hamburger_container">
+      <!-- dark overlay -->
+      <div class="dark_overlay"></div>
+
+      <!-- hamburger_menu -->
+      <div class="hamburger_menu">
+        <!-- close icon -->
+        <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg" class="close-icon">
+          <g fill="#151515" fill-rule="evenodd">
+            <path d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z" />
+            <path d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z" />
+          </g>
+        </svg>
+
+        <!-- mobile navigation
+          NB: all classes starting with 'm' denotes mobile -->
+        <div>
+          <div class="drop_down link">
+            <div class="drop_down_head mobile">
+              <span class="head-link">Features</span>
+              <img src="./images/icon-arrow-down.svg" alt="down arrow" />
+            </div>
+
+            <div class="m_drop_down_menu features hide_menu">
+              <div class="drop_down_item">
+                <img src="./images/icon-todo.svg" alt="todo icon" />
+                <a href="index.html" aria-label="Todo List">Todo List</a>
+              </div>
+
+              <div class="drop_down_item">
+                <img src="./images/icon-calendar.svg" alt="calendar icon" />
+                <a href="index.html" aria-label="Calendar">Calender</a>
+              </div>
+
+              <div class="drop_down_item">
+                <img src="./images/icon-reminders.svg" alt="reminders icon" />
+                <a href="index.html" aria-label="Reminders">Reminders</a>
+              </div>
+
+              <div class="drop_down_item">
+                <img src="./images/icon-planning.svg" alt="planning icon" />
+                <a href="index.html" aria-label="Planning">Planning</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="drop_down link">
+            <div class="drop_down_head mobile">
+              <span class="head-link">Company</span>
+              <img src="./images/icon-arrow-down.svg" alt="arrow-up" />
+            </div>
+
+            <div class="m_drop_down_menu company hide_menu">
+              <div>
+                <a href="index.html" aria-label="Link to company's history">History</a>
+                <a href="index.html" aria-label="Link to company's team">Our Team</a>
+                <a href="index.html" aria-label="Link to company's blog">Blog</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-link">
+            <a href="index.html" aria-label="Careers link">Careers</a>
+            <a href="index.html" aria-label="Link to company's about">About</a>
+          </div>
+
+          <div class="get_started mobile">
+            <a href="index.html" aria-label="Login button" class="login">Login</a>
+            <a href="index.html" aria-label="Registration button" class="register">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- main-content -->
+    <section class="main_content d-flex-bw">
+      <!-- info section-->
+      <div class="info">
+        <h1><span>Make</span> remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline
+          processes, create team rituals, and watch productivity soar.
+        </p>
+
+        <div class="learn-more-container">
+          <a href="index.html" class="learn_more" aria-label="Learn more">Learn more</a>
+        </div>
+
+        <div class="sponsors d-flex-bw">
+          <a href="index.html" aria-label="databiz"><img src="./images/client-databiz.svg" alt="databiz" /></a>
+          <a href="index.html" aria-label="audiophile"><img src="./images/client-audiophile.svg" alt="audiophile" /></a>
+          <a href="index.html" aria-label="client meet"><img src="./images/client-meet.svg" alt="client meet" /></a>
+          <a href="index.html" aria-label="client maker"><img src="./images/client-maker.svg" alt="client maker" /></a>
+        </div>
+      </div>
+
+      <!-- hero image section -->
+      <div class="hero-img">
+        <img src="./images/image-hero-desktop.png" alt="hero" class="hero-desktop" />
+        <img src="./images/image-hero-mobile.png" alt="hero-mobile" class="hero-mobile" />
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
